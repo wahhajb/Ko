@@ -20,7 +20,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   const dReason = 'Sin motivo';
   const msgtext = text || dReason;
   const sdms = msgtext.replace(/@\d+-?\d* /g, '');
-  const warntext = `*اعمل تاج او منشن لي الشخص الي عايز تديه انذار ⚠️*\n*مثال:*\n*${
+  const warntext = `*اعمل تاج او منشن لي الشخص الي تريد تعطيه انذار ⚠️*\n*مثال:*\n*${
     usedPrefix + command
   } @${global.suittag}*`;
   if (!who) {
@@ -39,7 +39,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   if (user.warn >= 3) {
     if (!bot.restrict) {
       return m.reply(
-          `*⚠️ المطور قافل ميزة الطرد لازم هو يفتحها يا حب*`,
+          `*⚠️ المطور قافل ميزة الطرد لازم هو يفتحها *`,
       );
     }
     user.warn = 0;
