@@ -2,7 +2,7 @@ import {toPTT} from '../lib/converter.js';
 const handler = async (m, {conn, usedPrefix, command}) => {
   const q = m.quoted ? m.quoted : m;
   const mime = (m.quoted ? m.quoted : m.msg).mimetype || '';
-  if (!/video|audio/.test(mime)) throw `*[💾مساعده💾]قم بالرد علي الفيديو او الاغنيه اللي عايز تحولها لريكورد*`;
+  if (!/video|audio/.test(mime)) throw `*[💾مساعده💾]قم بالرد علي الفيديو او الاغنيه اللي تريد تحولها لريكورد*`;
   const media = await q.download?.();
   if (!media && !/video/.test(mime)) throw '*الحجم كبير*';
   if (!media && !/audio/.test(mime)) throw '*الحجم كبير*';
