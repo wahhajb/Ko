@@ -1,6 +1,6 @@
 let handler  = async (m, { conn }) => {
 await conn.sendMessage(m.chat, { react: { text: '📽️', key: m.key } })
-conn.reply(m.chat,`*فرائي تشوف💀*:\n*ꔹ━━━━━ꔹ❰ افلام رعب ❱ꔹ━━━━━ꔹ*\n*『${pickRandom(global.bxviu)}』*\n*ꔹ━━━━━ꔹ❰ 𝐌𝐀𝐃𝐀𝐑𝐀↳🐢↲𝐁𝐎𝐓 ❱*`, m)
+conn.reply(m.chat,`*فرائي تشوف💀*:\n*ꔹ━━━━━ꔹ❰ افلام رعب ❱ꔹ━━━━━ꔹ*\n*『${pickRandom(global.bxviu)}』*\n*ꔹ━━━━━ꔹ❰ نسيانن١↳🐢↲𝐁𝐎𝐓 ❱*`, m)
 
 }
 handler.help = ['Z O R O']
